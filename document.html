@@ -1,0 +1,248 @@
+<!--
+Java Script
+Why Study JavaScript?
+  ->JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+JavaScript Can Change HTML Content
+    ->One of many JavaScript HTML methods is getElementById().
+    ->document.getElementById("demo").innerHTML = "Hello JavaScript";
+
+JavaScript Can Change HTML Styles (CSS)
+    -><button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+JavaScript Can Hide HTML Elements
+    ->document.getElementById("demo").style.display = "none";
+
+JavaScript Functions and Events
+    ->A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+      For example, a function can be called when an event occurs, like when the user clicks a button.  
+
+      -><!DOCTYPE html>
+        <html>
+        <head>
+        <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        </script>
+        </head>
+        <body>
+        <h2>Demo JavaScript in Head</h2>
+
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        </body>
+        </html>
+
+JavaScript Display Possibilities
+       ->JavaScript can "display" data in different ways:
+
+            Writing into an HTML element, using innerHTML.
+            Writing into the HTML output using document.write().
+            Writing into an alert box, using window.alert().
+            Writing into the browser console, using console.log().
+        
+Using innerHTML
+        -><!DOCTYPE html>
+            <html>
+            <body>
+
+            <h1>My First Web Page</h1>
+            <p>My First Paragraph</p>
+
+            <p id="demo"></p>
+
+            <script>
+            document.getElementById("demo").innerHTML = 5 + 6;
+            </script>
+
+            </body>
+            </html>
+
+Using document.write()
+       -><!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
+
+        <script>
+        document.write(5 + 6);
+        </script>
+
+        </body>
+        </html>
+
+Using window.alert()
+       -><!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
+
+        <script>
+        window.alert(5 + 6);
+        </script>
+
+        </body>
+        </html>
+Using console.log()
+       -><!DOCTYPE html>
+        <html>
+        <body>
+
+        <script>
+        console.log(5 + 6);
+        </script>
+
+        </body>
+        </html>
+JavaScript Print
+       -><!DOCTYPE html>
+        <html>
+        <body>
+
+        <h2>The window.print() Method</h2>
+
+        <p>Click the button to print the current page.</p>
+
+        <button onclick="window.print()">Print this page</button>
+
+        </body>
+        </html>
+Single Line Comments
+    ->// Change heading:
+Multi-line Comments
+    ->/*
+            The code below will change
+            the heading with id = "myH"
+            and the paragraph with id = "myP"
+            in my web page:
+            */
+JavaScript Variables
+    Variables are Containers for Storing Data
+      Automatically
+        Using var
+           -> var x = 5;
+              var y = 6;
+              var z = x + y;
+        Using let
+            ->let x = 5;
+              let y = 6;
+              let z = x + y;
+        Using const
+           ->const x = 5;
+            const y = 6;
+             const z = x + y;
+JavaScript Operators
+        The Assignment Operator = assigns values
+
+        The Addition Operator + adds values
+
+        The Multiplication Operator * multiplies values
+
+        The Comparison Operator > compares values
+
+Types of JavaScript Operators
+        There are different types of JavaScript operators:
+
+            Arithmetic Operators
+            Assignment Operators
+            Comparison Operators
+            String Operators
+            Logical Operators
+            Bitwise Operators
+            Ternary Operators
+            Type Operators
+
+JavaScript has 8 Datatypes
+            String
+            Number
+            Bigint
+            Boolean
+            Undefined
+            Null
+            Symbol
+            Object
+
+          // Numbers:
+            let length = 16;
+            let weight = 7.5;
+
+            // Strings:
+            let color = "Yellow";
+            let lastName = "Johnson";
+
+            // Booleans
+            let x = true;
+            let y = false;
+
+            // Object:
+            const person = {firstName:"John", lastName:"Doe"};
+
+            // Array object:
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            // Date object:
+            const date = new Date("2022-03-25");
+
+JavaScript Arrays
+            const cars = ["Saab", "Volvo", "BMW"];
+
+JavaScript Objects
+            const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+The typeof Operator
+            <script>
+            document.getElementById("demo").innerHTML = 
+            typeof "" + "<br>" +
+            typeof "John" + "<br>" + 
+            typeof "John Doe";
+            </script>
+Undefined
+            let car;  
+Empty Values
+           let car = "";
+
+
+console.log("GfG");
+console.log("\n");  // New line
+console.log("Courses\n");  // New Line With Text
+console.log("Learn");
+console.log("\n\n");  // Two New Lines
+console.log("Grow");
+ 
+
+String length
+String charAt()
+String charCodeAt()
+String at()
+String [ ]
+String slice()
+String substring()
+String substr()
+----------See Also:
+String Search Methods
+String Templates
+String toUpperCase()
+String toLowerCase()
+String concat()
+String trim()
+String trimStart()
+String trimEnd()
+String padStart()
+String padEnd()
+String repeat()
+String replace()
+String replaceAll()
+String split()
+-->
