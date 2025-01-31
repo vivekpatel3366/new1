@@ -183,4 +183,38 @@ console.log(typeof(sbc));
          function_name();         
 */
 // without peramiter function/static function
-//with parameter/dynamic function
+//with parameter/dynamic function//oops= object oriented programs
+/*
+  class
+      class is a block of code for similler type method and variable.
+   How to create class?
+      class className{
+      
+      }
+  object = object is a instance of class.
+ How to create object?
+     syntex:- new classname();
+     var variablename = new classname();
+  member variable and function
+   how to create variable in class?
+      variablename = value;
+   How to access variable out side the class.
+      syntex:- objvariablename.classVariableName;   
+   How to access variable inside the class method?
+       syntex:- this.variablename;   
+   How to create method inside the class?
+       syntex:- functionName(){
+       
+       }   
+   How to call class method out side the class?
+     syntex:- objVariable.methoname();
+   How to call method inside class other method.
+     syntex:- this.methodname();        
+   construct = construct is a one type of megic method if we create object then this method automatically call.
+        syntex:- __construct(){
+             
+        }
+  inheretance = we can use one class property 
+ 
+
+*/
