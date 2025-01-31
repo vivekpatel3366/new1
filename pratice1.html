@@ -530,9 +530,59 @@
 
             console.log(item);
         }
+        class Animal {
+            animal_name = 'Tiger';
+            animal_color = 'Yellow';
+            animal_type = 'Forest';
+            constructor() {
+                var info = this.displayAnimInfodyanemic('Cow', 'White', 'Domestic');
+                console.log('in India ' + info + ' is call mother. and ever ');
+            }
+            displayAnimInfo() {
+                console.log('Animal name is ' + this.animal_name);
+                console.log('Its color is ' + this.animal_color);
+            }
+            displayAnimInfodyanemic(name, color, type) {
+                var animinfo = {
+                    'name': name
+                };
+                animinfo.color = color;
+                animinfo.type = type;
+                return animinfo;
+            }
+            setvalue(name, color, type) {
+                this.animal_name = name;
+                this.animal_color = color;
+                this.animal_type = type;
+            }
+            getvalue() {
+                console.log('Name :-  ' + this.animal_name);
+                console.log('color:- ' + this.animal_color);
+                console.log('type :-  ' + this.animal_type);
+            }
+
+        }
+        var objAnimal = new Animal();
+        console.log(objAnimal.displayAnimInfodyanemic('lion', 'orange', 'forest'));
+        console.log(objAnimal);
+        console.log(objAnimal.animal_name + ' is our National animal');
+        objAnimal.displayAnimInfo();
+        objAnimal.setvalue('vivek,', 'vivek2', 'abc');
+        objAnimal.getvalue();
+
+
+        class dmesticAnim extends Animal {
+            constructor() {
+                super();
+                console.log(super.displayAnimInfodyanemic('Dog123', 'White', 'Domestic'));
+
+            }
+        }
+        var objDomestic = new dmesticAnim();
+        console.log(objDomestic);
     </script>
 
-</body>
+
 
 </html>
 
