@@ -18,10 +18,46 @@
        3] psuedoclass selecter
        4] psuedo element selecter
        5] attribute selecter
-   2] event
+   2] event =
+      syntex :- jQuery("selecter").on("eventname", function(){
+      
+      })
+       jQuery("selecter").eventname(function(){
+      
+      })
+       $("selecter").eventname(function(){
+      
+      })
    3] method 
+       jQuery("slecter").methodname();
+       $("selecter").methodname();
 */
 jQuery(document).ready(function() {
-    console.log('jquery library is loaded');
-
+    $("button").on('click', function() {
+        console.log('click event is ganareted');
+    });
+    jQuery(".important").hover(function() {
+        console.log('hover event is ganarated');
+    });
+    jQuery("#btn-hide").on('dblclick', function() {
+        jQuery("#form-1").hide();
+    });
+    jQuery("#btn-show").on('dblclick', function() {
+        jQuery("#form-1").show();
+    });
+    jQuery("#btn-toggle").on('click', function() {
+        jQuery("#form-1").toggle(7000);
+    });
+    jQuery("#p-3").hover(function() {
+        jQuery(this).css('color', 'blue');
+    })
+    jQuery("#btn-fade").on('dblclick', function() {
+        jQuery("#form-1").fadeIn();
+    });
+    jQuery("#btn-Out").on('dblclick', function() {
+        jQuery("#form-1").fadeOut();
+    });
+    jQuery("#btn-FADETOGLE").on('dblclick', function() {
+        jQuery("#form-1").fadeToggle();
+    });
 })
